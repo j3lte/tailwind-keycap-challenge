@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="m-0 flex min-h-screen min-w-[320px] bg-[#F2F2F2] font-pixelify text-base font-normal text-[#213547]">
+  <div class="mx-auto flex flex-col items-center justify-center p-8">
+    <!-- BUTTON-->
+    <button
+      class="group/button relative inline-grid grid-cols-1 grid-rows-1 text-[40px] cursor-pointer bg-white/50 border-0 p-[var(--var-padding)] rounded-[var(--var-brad)] animate-rainbow shadow-glass">
+      <!-- BUTTON BACKGROUND -->
+      <div
+        class="bg-linear-to-b from-[var(--color-gray)] to-[var(--color-blackish)] group-active/button:scale-90 shadow-bg absolute inset-4 z-10 rounded-bg p-5">
+      </div>
+
+      <!-- RAINBOW GRADIENT BACKGROUND -->
+      <div
+        class="group-active/button:scale-90 group-active/button:pause-animation absolute inset-0 z-0 rounded-[var(--var-brad)] p-5 opacity-30 group-active/button:blur-[6.9px] animate-rainbow rainbow blur-[20px]">
+      </div>
+
+      <!-- TEXT -->
+      <span
+        class="button-text bg-linear-to-t from-[var(--color-gray)] to-[var(--color-blackish)] group-active/button:scale-90 relative z-20 rounded-full px-8 py-4 m-5 text-[#e9e9e9]">+
+        Add to cart</span>
+    </button>
+  </div>
+</body>
+
+</html>

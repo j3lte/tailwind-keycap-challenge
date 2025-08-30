@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --angle: 0turn;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+}
+
+@theme {
+  --font-pixelify: Pixelify Sans, Helvetica, Arial, sans-serif;
+  --var-brad: 35px;
+  --var-padding: 15px;
+
+  --color-black-border: rgba(0, 0, 0, 0.2);
+  --color-gray: #454449;
+  --color-blackish: #32352a;
+
+  --shadow-glass: 0 -1px 1px 0 var(--color-white), 0 1px 1px 0 var(--color-white),
+  1px 1px 1px 0 var(--color-black-border), -1px 0 1px 0 var(--color-black-border), 0 0 10px var(--color-black-border);
+  --shadow-bg: 0 0 10px 0 var(--color-black-border), 0 8px 10px 0 var(--color-black-border);
+
+  --radius-bg: calc(var(--var-brad) - var(--var-padding));
+
+  --animate-rainbow: rainbow 3s linear infinite;
+
+  @keyframes rainbow {
+    100% {
+      --angle: 1turn;
+    }
+  }
+}
+
+@utility pause-animation {
+  animation-play-state: paused!important;
+}
+
+@utility rainbow {
+  background: conic-gradient(from var(--angle), #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
