@@ -11,17 +11,15 @@
   ],
   "private": true,
   "type": "module",
+  "homepage": "https://j3lte.github.io/tailwind-keycap-challenge/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "format": "prettier --write './src/**/*.{html,js,jsx,ts,tsx}'"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.12",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
