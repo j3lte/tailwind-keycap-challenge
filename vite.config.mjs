@@ -9,4 +9,5 @@ export default defineConfig({
     emptyOutDir: true
   },
   root: "src",
+  base: "/tailwind-keycap-challenge/"
 });
