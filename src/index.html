@@ -1,48 +1,70 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tailwind Keycap Challenge</title>
+    <meta
+      name="description"
+      content="Tailwind Keycap Challenge - Jelte Lagendijk"
+    />
+    <meta name="author" content="Jelte Lagendijk" />
+    <meta
+      name="keywords"
+      content="Tailwind, Keycap, Challenge, Jelte Lagendijk"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
-  <title>Tailwind Keycap Challenge</title>
-  <meta name="description" content="Tailwind Keycap Challenge - Jelte Lagendijk">
-  <meta name="author" content="Jelte Lagendijk">
-  <meta name="keywords" content="Tailwind, Keycap, Challenge, Jelte Lagendijk">
-  <meta name="robots" content="noindex, nofollow">
-</head>
+  <body
+    class="m-0 flex min-h-screen min-w-[320px] bg-[#F2F2F2] font-pixelify text-base font-normal text-[#213547] antialiased"
+  >
+    <div class="mx-auto flex flex-col items-center justify-center p-8">
+      <!-- BUTTON-->
+      <button
+        class="group/button relative inline-grid animate-rainbow cursor-pointer grid-cols-1 grid-rows-1 rounded-4xl border-0 bg-white/50 p-4 text-4.5xl shadow-glass"
+      >
+        <!-- BUTTON BACKGROUND -->
+        <div
+          class="absolute inset-4 z-10 rounded-2xl bg-linear-to-b from-gray to-blackish p-5 shadow-bg group-active/button:scale-95"
+        ></div>
 
-<body
-  class="m-0 flex min-h-screen min-w-[320px] bg-[#F2F2F2] font-pixelify text-base font-normal text-[#213547] antialiased">
-  <div class="mx-auto flex flex-col items-center justify-center p-8">
-    <!-- BUTTON-->
-    <button
-      class="group/button relative inline-grid grid-cols-1 grid-rows-1 text-4.5xl cursor-pointer bg-white/50 border-0 p-4 rounded-4xl animate-rainbow shadow-glass">
-      <!-- BUTTON BACKGROUND -->
-      <div
-        class="bg-linear-to-b from-gray to-blackish group-active/button:scale-95 shadow-bg absolute inset-4 z-10 rounded-2xl p-5">
-      </div>
+        <!-- RAINBOW GRADIENT BACKGROUND -->
+        <div
+          class="absolute inset-0 -z-[1] animate-rainbow rounded-4xl bg-conic-[from_var(--angle),_#ff0000,_#ffff00,_#00ff00,_#00ffff,_#0000ff,_#ff00ff,_#ff0000] p-5 opacity-40 blur-xl group-active/button:inset-2 group-active/button:scale-95 group-active/button:opacity-70 group-active/button:blur-xs"
+        ></div>
 
-      <!-- RAINBOW GRADIENT BACKGROUND -->
-      <div
-        class="group-active/button:scale-95 absolute inset-0 group-active/button:inset-2 -z-[1] rounded-4xl p-5 opacity-40 animate-rainbow bg-conic-[from_var(--angle),_#ff0000,_#ffff00,_#00ff00,_#00ffff,_#0000ff,_#ff00ff,_#ff0000] blur-xl group-active/button:blur-xs group-active/button:opacity-50">
-      </div>
-
-      <!-- TEXT -->
-      <span
-        class="bg-linear-to-t from-gray to-blackish group-active/button:scale-95 relative z-20 rounded-full px-8 py-4 m-5 text-[#e9e9e9]">+
-        Add to cart</span>
-    </button>
-  </div>
-  <div class="absolute bottom-1 right-1 text-xs font-bold">
-    <p><a href="https://github.com/j3lte/tailwind-keycap-challenge" target="_blank" rel="noopener noreferrer">Made with
-        🧡 by Jelte Lagendijk</a> - <a href="https://dribbble.com/shots/25117095" target="_blank"
-        rel="noopener noreferrer">Inspiration</a></p>
-  </div>
-</body>
-
+        <!-- TEXT -->
+        <span
+          class="relative z-20 m-5 rounded-full bg-linear-to-t from-gray to-blackish px-8 py-4 text-[#e9e9e9] group-active/button:scale-95"
+          >+ Add to cart</span
+        >
+      </button>
+    </div>
+    <div class="absolute right-2 bottom-2 text-xs font-bold">
+      <p>
+        <a
+          href="https://github.com/j3lte/tailwind-keycap-challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-sm"
+          >Made with 🧡 by Jelte Lagendijk</a
+        >
+        -
+        <a
+          href="https://dribbble.com/shots/25117095"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-sm"
+          >Inspiration</a
+        >
+      </p>
+    </div>
+  </body>
 </html>
