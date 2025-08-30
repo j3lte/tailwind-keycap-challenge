@@ -18,9 +18,8 @@
   /* Fonts */
   --font-pixelify: Pixelify Sans, Helvetica, Arial, sans-serif;
 
-  /* Variables */
-  --var-brad: 35px;
-  --var-padding: 15px;
+  /* Text */
+  --text-4.5xl: 2.75rem;
 
   /* Colors */
   --color-gray: #454449;
@@ -30,9 +29,6 @@
   --shadow-glass: 0 -1px 1px 0 var(--color-white), 0 1px 1px 0 var(--color-white),
   1px 1px 1px 0 rgba(0, 0, 0, 0.2), -1px 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
   --shadow-bg: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.2);
-
-  /* Radius */
-  --radius-bg: calc(var(--var-brad) - var(--var-padding));
 
   /* Animations */
   --animate-rainbow: rainbow 3s linear infinite;
